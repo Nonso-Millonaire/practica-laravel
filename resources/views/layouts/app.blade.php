@@ -7,12 +7,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body class="font-sans antialiased bg-gray-100">
-<div class="min-h-screen">
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+<div class="min-h-screen flex flex-col">
     <x-header />
+
     <x-nav />
 
-    <main class="p-6">
+    <main class="flex-grow p-6">
         {{ $slot }}
     </main>
 

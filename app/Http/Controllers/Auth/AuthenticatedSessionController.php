@@ -34,13 +34,24 @@ class AuthenticatedSessionController extends Controller
     /**
      * Destroy an authenticated session.
      */
+    /**
+     * Destroy an authenticated session.
+     */
     public function destroy(Request $request): RedirectResponse
     {
+        // 1. Guardamos el idioma actual antes de borrar la sesión
+        $locale = $request->session()->get('locale');
+
         Auth::guard('web')->logout();
 
+        // 2. Aquí Laravel destruye la sesión
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
+
+        // 3. Volvemos a guardar el idioma en la nueva sesión limpia
+        if ($locale) {
+            $request->session()->put('locale', $locale);
+        }
 
         return redirect('/');
     }

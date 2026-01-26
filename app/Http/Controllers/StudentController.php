@@ -20,12 +20,16 @@ class StudentController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        // 1. Validamos y GUARDAMOS los datos validados en una variable
+        $validatedData = $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:students',
+            // 'phone' => 'nullable', // Añade esto si tienes teléfono
         ]);
 
-        Student::create($request->all());
+        // 2. Creamos el estudiante SOLO con los datos validados
+        // (Esto excluye automáticamente el '_token')
+        Student::create($validatedData);
 
         return redirect()->route('students.index')
             ->with('success', __('Student created successfully.'));
