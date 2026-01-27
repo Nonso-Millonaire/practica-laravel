@@ -293,5 +293,15 @@
     "Project Portfolio": "Portafolio de Proyectos",
     "Projects": "Proyectos",
     "No projects found.": "No se encontraron proyectos.",
-    "View Details": "Ver Detalles"
+    "View Details": "Ver Detalles",
+    "Add Student": "Añadir estudiante",
+    "Create Student": "Crear Estudiante",
+    "Create Project": "Crear Proyecto",
+    "Title": "Título",
+    "Description": "Descripción",
+    "Project created successfully.": "Proyecto creado con éxito.",
+    "Project updated successfully.": "Proyecto actualizado con éxito.",
+    "Project deleted successfully.": "Proyecto eliminado con éxito.",
+    "Project": "Proyecto",
+    "Success": "Éxito"
 }

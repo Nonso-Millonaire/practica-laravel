@@ -288,5 +288,13 @@
     "Project Portfolio": "Portfolio de Projets",
     "Projects": "Projets",
     "No projects found.": "Aucun projet trouvé.",
-    "View Details": "Voir les détails"
+    "View Details": "Voir les détails",
+    "Create Project": "Créer un Projet",
+    "Title": "Titre",
+    "Description": "Description",
+    "Project created successfully.": "Projet créé avec succès.",
+    "Project updated successfully.": "Projet mis à jour avec succès.",
+    "Project deleted successfully.": "Projet supprimé avec succès.",
+    "Project": "Projet",
+    "Success": "Succès"
 }

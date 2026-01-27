@@ -293,5 +293,13 @@
     "Project Portfolio": "Proje Portföyü",
     "Projects": "Projeler",
     "No projects found.": "Proje bulunamadı.",
-    "View Details": "Detayları Gör"
+    "View Details": "Detayları Gör",
+    "Create Project": "Proje Oluştur",
+    "Title": "Başlık",
+    "Description": "Açıklama",
+    "Project created successfully.": "Proje başarıyla oluşturuldu.",
+    "Project updated successfully.": "Proje başarıyla güncellendi.",
+    "Project deleted successfully.": "Proje başarıyla silindi.",
+    "Project": "Proje",
+    "Success": "Başarılı"
 }

@@ -17,8 +17,9 @@ Route::get('locale/{lang}', function ($lang) {
 
 Route::get('/', function () {
     return view('welcome');
-})->name('home');;
-Route::get('/projects', [ProjectController::class, 'index'])->middleware(['auth', 'verified'])->name('projects.index');
+})->name('home');
+
+Route::resource('projects', ProjectController::class)->middleware(['auth', 'verified']);
 
 Route::resource('students', StudentController::class)->middleware('auth');
 
